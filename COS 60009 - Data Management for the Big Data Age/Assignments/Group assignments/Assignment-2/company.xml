@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Company SYSTEM "company.dtd">
+<Company>
+    <Divisions>
+        <Division DID="T01">
+            <DNAME>Technology</DNAME>
+            <LOCATION>Sydney</LOCATION>
+            <Projects>
+                <Project PID="P001" DID="T01">
+                    <PNAME>Software Development Engineering</PNAME>
+                    <BUDGET>2000000</BUDGET>
+                </Project>
+                <Project PID="P002" DID="T01">
+                    <PNAME>Devops Engineering</PNAME>
+                    <BUDGET>2500000</BUDGET>
+                </Project>
+            </Projects>
+            <Employees>
+                <Employee EID="EMP001" DID="T01">
+                    <ENAME>Arun Ragavendhar</ENAME>
+                    <OFFICE>101</OFFICE>
+                    <BIRTHDATE>1999-08-22</BIRTHDATE>
+                    <SALARY>120000</SALARY>
+                    <Assignment>
+                        <Assign PID="P001" EID="EMP001">
+                            <HOURS>38</HOURS>
+                        </Assign>
+                    </Assignment>    
+                </Employee>
+                <Employee EID="EMP002" DID="T01">
+                    <ENAME>Christopher Opie</ENAME>
+                    <OFFICE>102</OFFICE>
+                    <BIRTHDATE>1985-01-01</BIRTHDATE>
+                    <SALARY>150000</SALARY>
+                    <Assignment>
+                        <Assign PID="P001" EID="EMP002">
+                            <HOURS>18</HOURS>
+                        </Assign>
+                        <Assign PID="P002" EID="EMP002">
+                            <HOURS>20</HOURS>
+                        </Assign>
+                    </Assignment>    
+                </Employee>
+                <Employee EID="EMP003" DID="T01">
+                    <ENAME>Landy Wu</ENAME>
+                    <OFFICE>103</OFFICE>
+                    <BIRTHDATE>1996-06-04</BIRTHDATE>
+                    <SALARY>130000</SALARY>
+                    <Assignment>    
+                        <Assign PID="P002" EID="EMP003">
+                            <HOURS>35</HOURS>
+                        </Assign>
+                    </Assignment>    
+                </Employee>
+            </Employees>
+        </Division>
+        
+        <Division DID="M01">
+            <DNAME>Marketing</DNAME>
+            <LOCATION>Melbourne</LOCATION>
+            <Projects>
+                <Project PID="P003" DID="M01">
+                    <PNAME>Brand Promotion</PNAME>
+                    <BUDGET>1800000</BUDGET>
+                </Project>
+                <Project PID="P004" DID="M01">
+                    <PNAME>Market Research</PNAME>
+                    <BUDGET>2200000</BUDGET>
+                </Project>
+            </Projects>
+            <Employees>
+                <Employee EID="EMP004" DID="M01">
+                    <ENAME>Emma Watson</ENAME>
+                    <OFFICE>304</OFFICE>
+                    <BIRTHDATE>1988-05-15</BIRTHDATE>
+                    <SALARY>140000</SALARY>
+                    <Assignment> 
+                        <Assign PID="P003" EID="EMP004">
+                            <HOURS>18</HOURS>
+                        </Assign>
+                    </Assignment>     
+                </Employee>
+                <Employee EID="EMP005" DID="M01">
+                    <ENAME>David Warner</ENAME>
+                    <OFFICE>401</OFFICE>
+                    <BIRTHDATE>1979-09-30</BIRTHDATE>
+                    <SALARY>160000</SALARY>
+                    <Assignment>
+                        <Assign PID="P003" EID="EMP005">
+                            <HOURS>14</HOURS>
+                        </Assign>
+                        <Assign PID="P004" EID="EMP005">
+                            <HOURS>22</HOURS>
+                        </Assign>
+                    </Assignment>     
+                </Employee>
+                <Employee EID="EMP006" DID="M01">
+                    <ENAME>Harry Potter</ENAME>
+                    <OFFICE>206</OFFICE>
+                    <BIRTHDATE>1992-11-18</BIRTHDATE>
+                    <SALARY>130000</SALARY>
+                    <Assignment> 
+                        <Assign PID="P004" EID="EMP006">
+                            <HOURS>44</HOURS>
+                        </Assign>
+                    </Assignment>    
+                </Employee>
+            </Employees>
+        </Division>
+    </Divisions>    
+</Company>

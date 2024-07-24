@@ -1,0 +1,21 @@
+The Ticket-issuing system has the below ambiguities /Omissions in its Requirements statements :
+
+
+Lack of Security Protocol measures : The system proposes to validate and charge the user through a credit card Transaction , but , does not have any information/specification regarding  how the system is going to process secure transactions without  duplicate redundant payments (where the card is charged more than once) , failed payments, holding card details abstract and hidden to unauthorized personnel,etc.
+
+
+Lack of program flow and error/exception handling details : There is no information of how the system will handle an error/exception in the middle of the process. For example , if a credit card of a user is charged but the user's ticket is still not processed and the user gets an error or if the user wants to go back to the previous step and change the choice that was made or if the User Id is incorrect.
+
+Customer  Privacy Policy page missing  : The system proposes to get sensitive personal information like credit card details and personal identification number. Hence , It is a must to ask the user for consent and verification before proceeding.
+
+
+Lack of clarity on the Ticket details and games menu offered : The system never specifies about the ticket type, whether a certain ticket is for an adult or a child , and the allowed type of games and other entertainment events for each category . Also there is no clear data on whether users can go back to the  games menu list and whether it would be possible to return,change , swap , mix and match ,and do other modifications on their choice.
+
+
+No mention of a user preview or confirmation page before payment : The system lacks a preview page prompt /pop-up showing all the user choices and details entered before the payment step. This is very crucial to ensure that the users pay and buy  only what they actually wanted.
+
+
+Lack of a Customer Help prompt system : The system does not have any customer help assistant or chat box to help unfamiliar users who are not sure of the steps involved  or for people with special needs who might need some extra support.
+
+
+

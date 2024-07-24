@@ -1,0 +1,40 @@
+ {
+    "classes": 
+        [
+          {
+            "classID": "CS115",
+            "department": "ComputerScience",
+            "instructors": ["Adams", "Dykes"],
+            "title": "Programming Concepts",
+            "credits": {
+              "req": "yes",
+              "value": 3
+            }
+          },
+          {
+            "classID": "CS205",
+            "semester": "fall",
+            "department": "ComputerScience",
+            "instructors": ["Grant"],
+            "title": "JavaScript",
+            "credits": {
+              "req": "yes",
+              "value": 3
+            }
+          },
+          {
+            "classID": "CS255",
+            "semester": "fall",
+            "department": "ComputerScience",
+            "instructors":["Adams", "Grant", "Dykes"],
+            "title": "Java",
+            "credits": {
+              "req": "no",
+              "value": 3
+            }
+          }
+        ]
+
+  }
+  
+  

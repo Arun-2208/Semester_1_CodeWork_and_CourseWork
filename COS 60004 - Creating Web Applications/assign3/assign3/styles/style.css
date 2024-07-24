@@ -1,0 +1,711 @@
+
+/*
+filename: style.css
+author: Arun Ragavendhar -104837257
+created: 12/03/2024
+last modified: 28/05/2024
+
+*/
+
+
+/* common styling applied to all elements of all pages*/
+
+*{
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/*Styling of background image in body tag for all pages uniformly*/
+
+body{
+    background-image: url("./images/background2.jpeg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+      
+}
+
+/*Universal styling of header,footer and other common elements that apply to all pages done below*/
+
+/*styling for header along with the header title*/
+
+.heading{
+    width:100%;
+    height:10%;
+    background-color:#65000b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding:0;
+    opacity:0.8;
+    text-align:center
+}
+
+.heading h1{ 
+    font: xx-large bold  Verdana, 'Geneva', Tahoma, sans-serif;
+    color: #FFFFFF;
+    padding:8px;  
+}
+
+hr{
+    color:#A9A9A9;
+}
+
+
+/*styling for the navigation bar*/
+
+.navbar{
+    width: 100%;
+    background-color: #301934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.5em;
+    opacity:0.9;
+}
+
+/*styling for the navigation buttons*/
+
+.navbuttons{
+    width:10%;
+    padding:0.5em;
+    margin:0.5em;
+    text-align: center;
+}
+
+/*styling using pseudo classes to set the navigation button colors*/
+
+.navbuttons a:link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbuttons a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbuttons a:active{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbuttons a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*styling for footer of all pages*/
+
+.foot{
+    width:100%;
+    background-color: #65000b;
+    display: inline-block;
+    text-align: center;
+    margin: 0; 
+    padding:0;
+    opacity:0.8;   
+}
+
+.foot p{
+    color:#FFFFFF;
+}
+
+
+/* Styling for Index Page*/
+
+/*styling for the wrapping outer  container
+  of the index page*/
+
+.index{
+    width:100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding:2% 4% 2% 4%;
+}
+
+/*styling for the general company info section*/
+
+.section-index{
+    background-color: #faf0e6;
+    width:70%;
+    padding:3%;
+    border-radius:10px;
+    animation: fadeIn 7s;
+}
+
+/*CSS styling enhancements for an animation like 'fade in effect'*/
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.section-index:hover{
+    transform: scale(1.03);
+}
+
+/*styling for the image logo of the company */
+
+.aside-index{
+    width:30%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding:2%;
+    animation: fadeIn 7s;
+}
+
+#clogo{
+    height:80%;
+    width:80%;
+    border-radius: 5px;
+    opacity: 0.9;
+    border-radius:10px;
+}
+
+#clogo:hover{
+    transform: scale(1.05);
+}
+
+
+/* styling for Jobs Page*/
+
+/*styling for the wrapping outer  container
+  of the Jobs page*/
+
+.jobs{
+    width: 100%;
+    display:inline-flex;
+    margin:auto;
+    padding:2% 4% 2% 4%;
+    animation: fadeIn 4s;
+}
+
+.jobs h1{
+    font: xx-large bold Verdana, 'Geneva', Tahoma, sans-serif;
+    color: #FFFFFF;
+}
+
+/* styling for the aside side-menu bar*/
+
+.aside-jobs{
+    float:right;
+    width:25%;
+    background-color: #faf0e6;
+    margin:0;
+    padding:2%;
+    border:1px solid #301934;
+}
+
+/*styling for the job description section*/
+
+.section-jobs{
+    width:75%;
+    margin-right:2%;
+    border:1px solid #301934;
+
+    /* CSS enhancements done using scroll bar for added functionality */
+
+    height:400px;
+    overflow-y:scroll;
+}
+
+.section-jobs h2{
+    background-color: #faf0e6;
+    margin: 0;
+    text-align: center;
+}
+
+/*styling for the individual sections*/
+
+#vacancy-1{
+    width:100%;
+    padding:2%;
+    background-color: #faf0e6;
+}
+
+#vacancy-2{
+    width:100%;
+    padding:2%;
+    background-color: #faf0e6;
+}
+
+
+/*styling for Apply page*/
+
+/*styling for the wrapping outer  container
+  of the apply page*/
+
+.apply{
+    width:100%;
+    margin:0;
+    padding:2%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 3s;
+}
+
+/*styling for the individual sections of the apply page*/
+
+.section-apply{
+    background-color: #faf0e6;
+    padding:2%;
+    width:70%;
+    border:1px solid #301934;
+}
+
+label{
+    margin-right:2%;
+}
+
+/* Assignment 2 */
+/*styling for the error messsage span elements */
+
+#dobErrMsg{
+
+    color: red;
+    font-weight: bolder;
+}
+
+#stateErrMsg{
+
+    color: red;
+    font-weight: bolder;
+}
+
+#postCodeErrMsg{
+
+    color: red;
+    font-weight: bolder;
+}
+
+
+#otherSkillsErrMsg{
+
+    color: red;
+    font-weight: bolder;
+}
+
+#timer{
+
+    color: red;
+    font-weight: bolder;
+}
+
+
+/*styling for About Myself page*/
+
+/*styling for the wrapping outer  container
+  of the About Myself page*/
+
+.about{
+    width:100%;
+    margin:0;
+    padding:2%;
+}
+
+/*styling for the aside section which has been floated to the right side*/
+
+.aside-about{
+    margin-right:10%;
+    float:right;
+    text-align: center;
+    animation: fadeIn 4s;
+}
+
+/*styling for My Photo with its CSS properties like it border,margin ,size,etc.*/
+
+.aside-about figure{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.aside-about figure img{
+    height: 50%;
+    width:50%;
+    border:0.5px solid #301934;
+    
+}
+
+.aside-about figure figcaption{
+    margin:0.25%;
+    padding:0.25%;
+}
+
+/*styling for the  student details about myself section 
+- which includes a definition list*/
+
+.section1-about{
+    float:left;
+    margin-left: 10%;
+    width:40%;
+    background-color: #faf0e6;
+    padding:2%;
+    border:0.5px solid #301934;
+    animation: fadeIn 4s;
+}
+
+/*styling for the definition list*/
+
+.section1-about  dt{
+    float:left;
+    margin-right:3%;
+    width:30%;
+}
+
+
+/*styling for the student timetable section
+-table width, border and colour of the elements have been styled and set*/
+
+.section2-about{
+    clear:both;
+    margin:2%;
+    padding:2%;
+    border-radius: 10px;
+    animation: fadeIn 8s;
+}
+
+
+#timetable{
+    background-color: #faf0e6;
+    width:100%;
+    border:1px solid #301934;
+    border-collapse: collapse;
+}
+
+/*styling for the table width , border,padding*/
+
+#timetable th,tr,td{
+    margin: 0.5%;
+    padding:0.5%;
+    border:0.5px solid #A9A9A9;
+    text-align:center;
+}
+
+/*styling for the table data blocks coloring*/
+
+.COS60004{
+    background-color: #BC8F8F;
+}
+
+.COS60009{
+    background-color: #FAFAD2;
+}
+
+.COS60010{
+    background-color: #90EE90;
+}
+
+.COS60022{
+    background-color: #FFB6C1;
+}
+
+
+
+/*styling for enhancements page*/
+
+/*styling for the wrapping outer  container
+  of the enhancements page*/
+
+#enhancements{
+    width:100%;
+    margin:0;
+    padding:2%;
+    text-align:center;
+    animation: fadeIn 4s;
+}
+
+/*styling for the individual sections of the enhancements page*/
+
+#section-enhancements{
+ width:75%;
+ margin: auto;
+
+ /*CSS enhancemnts done by using a scroll bar to add extra functionality*/
+
+ height:400px;
+ overflow-y:scroll;
+}
+
+#section-enhancements fieldset{
+    margin:2%;
+    padding:2%;
+}
+
+#section-enhancements fieldset p,ul,li{
+  text-align: left;
+  padding:0.25%;
+}
+
+#section-enhancements fieldset legend{
+    text-align: center;
+}
+
+
+
+/*styling for enhancements2 page*/
+
+/*styling for the wrapping outer  container
+  of the enhancements page*/
+
+  #enhancements2{
+    width:100%;
+    margin:0;
+    padding:2%;
+    text-align:center;
+    animation: fadeIn 4s;
+}
+
+/*styling for the individual sections of the enhancements2 page*/
+
+#section-enhancements2{
+ width:75%;
+ margin: auto;
+
+ /*CSS enhancemnts done by using a scroll bar to add extra functionality*/
+
+ height:400px;
+ overflow-y:scroll;
+}
+
+#section-enhancements2 fieldset{
+    margin:2%;
+    padding:2%;
+}
+
+#section-enhancements2 fieldset p,ul,li{
+  text-align: left;
+  padding:0.5%;
+}
+
+#section-enhancements2 fieldset legend{
+    text-align: center;
+}
+
+
+/*styling for phpenhancements page*/
+
+/*styling for the wrapping outer  container
+  of the enhancements page*/
+
+  #phpenhancements{
+    width:100%;
+    margin:0;
+    padding:2%;
+    text-align:center;
+    animation: fadeIn 4s;
+}
+
+/*styling for the individual sections of the phpenhancements page*/
+
+#section-phpenhancements{
+ width:75%;
+ margin: auto;
+
+ /*CSS enhancemnts done by using a scroll bar to add extra functionality*/
+
+ height:400px;
+ overflow-y:scroll;
+}
+
+#section-phpenhancements fieldset{
+    margin:2%;
+    padding:2%;
+}
+
+#section-phpenhancements fieldset p,ul,li{
+  text-align: left;
+  padding:0.5%;
+}
+
+#section-phpenhancements fieldset legend{
+    text-align: center;
+}
+
+
+
+/*styling for managerLogin page*/
+
+/*styling for the wrapping outer  container
+  of the enhancements page*/
+
+  #managerLogin{
+    width:100%;
+    margin:0;
+    padding:2%;
+    text-align:center;
+    animation: fadeIn 4s;
+}
+
+/*styling for the individual sections of the phpenhancements page*/
+
+#section-managerLogin{
+ width:75%;
+ margin: auto;
+
+ /*CSS enhancemnts done by using a scroll bar to add extra functionality*/
+
+ height:400px;
+ overflow-y:scroll;
+}
+
+#section-managerLogin fieldset{
+    margin:2%;
+    padding:2%;
+}
+
+#section-managerLogin fieldset p,ul,li{
+  text-align: left;
+  padding:0.5%;
+}
+
+#section-managerLogin fieldset legend{
+    text-align: center;
+}
+
+
+
+/*All the pages have been made to be responsive and re flow 
+accordingly to be viewable on all devices including
+mobiles , tablets , laptops and desktops using media queries*/
+
+
+/*Below Media query used to make the website responsive for tablet screen sizes*/
+
+@media only screen and (max-width: 1302px) and (min-width:600px){
+
+    /*styling for the making the About Myself page 
+    responsive and fluid for tablet devices*/
+
+    .about{
+        width:100%;
+        display: block;
+    }
+
+    .aside-about{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .section1-about{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .section2-about{
+       width:100%;
+       margin:0;
+       padding:0;
+    }
+}
+
+
+/* Below Media query used to make the website responsive for mobile phone screen sizes*/
+
+@media only screen and (max-width: 599px){
+
+    /*styling for the making the index page layout responsive and fluid for mobile devices*/
+   
+    .navbar{
+        width: 100%;
+        display:block;
+        margin:0;
+    }
+        
+    .navbuttons{
+        width:100%;
+        display: block;
+        margin:0; 
+    }
+    
+    .index{
+        width:100%;
+        display: block;
+        margin:0;
+    }
+
+    .section-index{
+        width:100%;
+        margin:0;
+    }
+
+    .aside-index{
+        width:100%;
+        margin:0;
+    }
+
+    /*styling for the making the jobs page layout responsive and fluid for mobile devices*/
+
+    .jobs{
+        width: 100%;
+        display:block;
+    }
+    
+    .aside-jobs{
+        width:100%;
+    }
+        
+    .section-jobs{
+        padding-left: 0;
+        padding-bottom:2%;
+        width:100%;
+    }
+
+    /*styling for the making the apply page layout responsive and fluid for mobile devices*/
+
+    .apply{
+        width:100%;
+        display: block;
+    }
+
+    .section-apply{
+        width:100%;
+    }
+
+     /*styling for the making the about page layout responsive and fluid for mobile devices*/
+
+    .about{
+         width:100%;
+        display: block;
+    }
+
+    .aside-about{
+        width:100%;
+        margin:0;
+        padding:0;  
+    }
+
+    .section1-about{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .section2-about{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .section1-about  dt{
+        clear:both;
+        margin-right:0;
+        width:30%;
+    }   
+
+}
+
+
+
+/*processEOI.php - styling for the php pages and the error blocks */
+
+

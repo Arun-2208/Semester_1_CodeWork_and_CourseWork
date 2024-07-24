@@ -1,0 +1,29 @@
+
+        
+                <!ELEMENT Company (Divisions+)>
+                <!ELEMENT Divisions (Division+)>
+                <!ELEMENT Division (DNAME, LOCATION, Projects, Employees)>
+                <!ATTLIST Division DID ID #REQUIRED>
+                <!ELEMENT DNAME (#PCDATA)>
+                <!ELEMENT LOCATION (#PCDATA)>
+                <!ELEMENT Projects (Project+)>
+                <!ELEMENT Project (PNAME, BUDGET)>
+                <!ATTLIST Project PID ID #REQUIRED>
+                <!ATTLIST Project DID IDREF #REQUIRED>
+                <!ELEMENT PNAME (#PCDATA)>
+                <!ELEMENT BUDGET (#PCDATA)>
+                <!ELEMENT Employees (Employee+)>
+                <!ELEMENT Employee (ENAME, OFFICE, BIRTHDATE, SALARY,Assignment)>
+                <!ATTLIST Employee EID ID #REQUIRED>
+                <!ATTLIST Employee DID IDREF #REQUIRED>
+                <!ELEMENT ENAME (#PCDATA)>
+                <!ELEMENT OFFICE (#PCDATA)>
+                <!ELEMENT BIRTHDATE (#PCDATA)>
+                <!ELEMENT SALARY (#PCDATA)>
+                <!ELEMENT Assignment (Assign+)>
+                <!ELEMENT Assign (HOURS)>
+                <!ATTLIST Assign PID IDREF #REQUIRED>
+                <!ATTLIST Assign EID IDREF #REQUIRED>
+                <!ELEMENT HOURS (#PCDATA)>
+                
+

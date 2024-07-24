@@ -1,0 +1,57 @@
+
+/* processEOI.php - styling for the error messages*/
+
+.error{
+
+    color:red;
+    font-weight:bolder;
+}
+
+.success{
+
+    color:green;
+    font-weight:bolder;
+}
+
+
+/* manage.php - styling for the html elements*/
+
+
+#manage{
+
+    width:100%;
+    
+    margin:0;
+    padding:3%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+
+#options{
+
+    padding:2%;
+    
+
+}
+
+
+/* listAllEOI.php - styling for the html elements*/
+
+
+
+
+
+table,th,td{
+    
+    border: 3 px solid black;
+    background-color: antiquewhite;
+    border-collapse: collapse;
+}
+
+th{
+    font-size: small;
+}

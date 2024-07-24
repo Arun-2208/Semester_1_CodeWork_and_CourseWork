@@ -1,0 +1,26 @@
+<!DOCTYPE Company [
+        <!ELEMENT Company (Division+)>
+        <!ELEMENT Division (DNAME, LOCATION, Projects, Employees)>
+        <!ATTLIST Division DID CDATA #REQUIRED>
+        <!ELEMENT DNAME (#PCDATA)>
+        <!ELEMENT LOCATION (#PCDATA)>
+        <!ELEMENT Projects (Project+)>
+        <!ELEMENT Project (PNAME, BUDGET, Assign+)>
+        <!ATTLIST Project PID CDATA #REQUIRED>
+        <!ATTLIST Project DID CDATA #REQUIRED>
+        <!ELEMENT PNAME (#PCDATA)>
+        <!ELEMENT BUDGET (#PCDATA)>
+        <!ELEMENT Assign (HOURS)>
+        <!ATTLIST Assign PID CDATA #REQUIRED>
+        <!ATTLIST Assign EID CDATA #REQUIRED>
+        <!ELEMENT HOURS (#PCDATA)>
+        <!ELEMENT Employees (Employee+)>
+        <!ELEMENT Employee (ENAME, OFFICE, BIRTHDATE, SALARY)>
+        <!ATTLIST Employee EID CDATA #REQUIRED>
+        <!ATTLIST Employee DID CDATA #REQUIRED>
+        <!ELEMENT ENAME (#PCDATA)>
+        <!ELEMENT OFFICE (#PCDATA)>
+        <!ELEMENT BIRTHDATE (#PCDATA)>
+        <!ELEMENT SALARY (#PCDATA)>
+]>
+
